@@ -19,6 +19,7 @@ function gp_files()
     wp_enqueue_script('script125',get_theme_file_uri('assets/js/script.js'), NULL, '1.0', true);
     wp_localize_script('script125', 'url', array(
         'link' => get_bloginfo("url")
+	)
     );
     wp_enqueue_style('world_main_style',get_stylesheet_uri());
 }
