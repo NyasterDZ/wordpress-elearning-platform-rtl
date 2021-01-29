@@ -994,6 +994,7 @@ jQuery(document).ready(function (){
 })();
 
 (function(){
+    var siteUrl = url["link"];
     var spinner = false;
     var prevalue;
     var searchT;
@@ -1049,7 +1050,7 @@ jQuery(document).ready(function (){
 
     function getSearch(searchWord)
     {
-      $.getJSON("http://gp.local/wp-json/wp/v2/course?search=" + searchWord, posts =>{
+      $.getJSON(siteUrl + "/wp-json/wp/v2/course?search=" + searchWord, posts =>{
           
         $(".display-search-course").html(`
          ${posts.length ? posts.map(item=>`<h3><a href="${item.link}">${item.title.rendered}</a></h3>`) : `<h3>لا وجد نتائج</h3>` }
@@ -1078,7 +1079,7 @@ jQuery(document).ready(function (){
 				if (data.status == 1)
 				{
 					$('.log-in-footer').html("<b style='color:green'>تم تسجيل الدخول بنجاح</b>");
-                    setTimeout("window.location.href='http://gp.local/'",1000);
+                    			setTimeout(`window.location.href='${siteUrl}',1000`);
 				}
 				else
 				{
