@@ -1068,7 +1068,7 @@ jQuery(document).ready(function (){
 				userPass  = $('#user_pass').val(),
 				action    = 'custom_login',
 				param     = 'test_login',
-			        siteUrl = url["link"];;	
+			        siteUrl = url["link"];
 			
 			$.ajax({
 				url: "wp-admin/admin-ajax.php",
