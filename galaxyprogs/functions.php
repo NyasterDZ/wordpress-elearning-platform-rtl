@@ -4,8 +4,8 @@ function gp_files()
 {
     
     wp_enqueue_script('jquery-224',"https://code.jquery.com/jquery-2.2.4.js", NULL, '1.0', true);
-	wp_enqueue_script('bootstrap',get_theme_file_uri('assets/js/bootstrap.min.js'), NULL, '1.0', true);
-	wp_enqueue_script('popper',get_theme_file_uri('assets/js/popper.min.js'), NULL, '1.0', true);
+    wp_enqueue_script('bootstrap',get_theme_file_uri('assets/js/bootstrap.min.js'), NULL, '1.0', true);
+    wp_enqueue_script('popper',get_theme_file_uri('assets/js/popper.min.js'), NULL, '1.0', true);
     wp_enqueue_script('carousel',get_theme_file_uri('assets/js/owl.carousel.min.js'), NULL, '1.0', true);
     wp_enqueue_script('jarallax',get_theme_file_uri('assets/js/jarallax.js'), NULL, '1.0', true);
     wp_enqueue_script('magnific-popup',get_theme_file_uri('assets/js/jquery.magnific-popup.min.js'), NULL, '1.0', true);
@@ -17,7 +17,10 @@ function gp_files()
     wp_enqueue_script('jquery-ui',get_theme_file_uri('assets/js/jquery-ui.js'), NULL, '1.0', true);
     wp_enqueue_script('gmap3',get_theme_file_uri('assets/js/gmap3.min.js'), NULL, '1.0', true);
     wp_enqueue_script('script125',get_theme_file_uri('assets/js/script.js'), NULL, '1.0', true);
-	wp_enqueue_style('world_main_style',get_stylesheet_uri());
+    wp_localize_script('script125', 'url', array(
+        'link' => get_bloginfo("url")
+    )
+    wp_enqueue_style('world_main_style',get_stylesheet_uri());
 }
 
 add_action('wp_enqueue_scripts','gp_files');
@@ -155,8 +158,6 @@ function gplogout()
 
 ?>
 <?php 
-
-//Here's my custom CSS that removes the back link in a function
 function my_login_page_logo() { ?>
     <style type="text/css">
         body.login div#login h1 a {
