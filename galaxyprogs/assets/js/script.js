@@ -1053,7 +1053,7 @@ jQuery(document).ready(function (){
       $.getJSON(siteUrl + "/wp-json/wp/v2/course?search=" + searchWord, posts =>{
           
         $(".display-search-course").html(`
-         ${posts.length ? posts.map(item=>`<h3><a href="${item.link}">${item.title.rendered}</a></h3>`) : `<h3>لا وجد نتائج</h3>` }
+         ${posts.length ? posts.map(item=>`<h3><a href="${item.link}">${item.title.rendered}</a></h3>`) : `<h3>لا توجد نتائج</h3>` }
          `);
       });
     }
