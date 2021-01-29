@@ -6,7 +6,7 @@ A simple e-learning platform (RTL version)
 
 1. This theme uses the Template (**Genius Course - School Classes Institute HTML Template**)  that I already bought, so if you want to have a license for this theme, buy it from [this link](https://themeforest.net/item/genius-course-learning-course-html-template/21984716)   
 2. There is a mix between French and English in some names, so you can change what you want.
-3. This project is not complete (95%), some pages are missing (page.php & archive.php,...). As a simple solution, you can use the file **single-course.php** to make the missing pages, of course you need some modifications.
+3. This project is not complete (95%), some pages need some modifications (page.php & archive.php,...).
 4. [LTR version](https://github.com/NyasterDZ/wordpress-elearning-platform)
 
 # Installation steps
