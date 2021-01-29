@@ -1,11 +1,13 @@
 # wordpress-elearning-platform-rtl
-A simple e-learning platform to share files and courses with students (RTL version)
+A simple e-learning platform (RTL version)
 ![enter image description here](https://i.imgur.com/erfnktc.jpg)
 
 # Important
 
 1. This theme uses the Template (**Genius Course - School Classes Institute HTML Template**)  that I already bought, so if you want to have a license for this theme, buy it from [this link](https://themeforest.net/item/genius-course-learning-course-html-template/21984716)   
 2. There is a mix between French and English in some names, so you can change what you want.
+3. This project is not complete (95%), some pages are missing (page.php & archive.php,...). As a simple solution, you can use the file **single-course.php** to make the missing pages, of course you need some modifications.
+4. [LTR version](https://github.com/NyasterDZ/wordpress-elearning-platform)
 
 # Installation steps
 
@@ -57,16 +59,15 @@ In this folder you will find **1 file**:<br>
 3. Registration : your-domain/wp-login.php?action=register
 4. Home page : your-domain/home
 
-# quick modifications
-1. If you want to modify the information of the theme, in the **style.css** file which is located in **wp-content/themes/elearning**, you will find the information in the first css comment. The image of the theme is **screenshot.jpg**.
-2. If you want to change something in the **navbar**, the responsible file is **header.php** in **wp-content/themes/elearning**.
-3. If you want to change something in the **footer**, the responsible file is **footer-fpage.php** in **wp-content/themes/elearning**.
-4. If you want to change something in the **home page**, the responsible file is **front-page.php** in **wp-content/themes/elearning**.
-5. If you want to change the name of the options (Module/Chapter/Course/Video), the responsible file is **gp-cpt.php** in **wp-content/mu-plugins** **(Be careful when you modify something in this file, I suggest you to read a little about Custom post in wordpress)**.
-6. If you want to change the style,logo, images, and js files you will find them in **wp-content/themes/elearning/assets**.
+# Quick modifications
+1. If you want to modify the information of the theme, in the **style.css** file which is located in **wp-content/themes/galaxyprogs**, you will find the information in the first css comment. The image of the theme is **screenshot.jpg**.
+2. If you want to change something in the **navbar**, the responsible file is **header.php** in **wp-content/themes/galaxyprogs**.
+3. If you want to change something in the **footer**, the responsible file is **footer.php** (for the home page), and **footer-fpage.php** (for other pages) in **wp-content/themes/galaxyprogs**.
+4. If you want to change something in the **home page**, the responsible file is **front-page.php** in **wp-content/themes/galaxyprogs**.
+5. If you want to change the name of the options (Skills-Courses-Chapters-Mvideos-faqcats-faqanss), the responsible file is **gp-cpt.php** in **wp-content/mu-plugins** **(Be careful when you modify something in this file, I suggest you to read a little about Custom post in wordpress)**.
+6. If you want to change the style,logo, images, and js files you will find them in **wp-content/themes/galaxyprogs/assets**.
 7. The additional fields that appear below each creation form (in Module, Chapter, Course, Video), you will find them in **Custom Fields/Field Groups**. 
-8. The logo which is in **wp-login.php**, you can change it from the **functions.php** file in **wp-content/themes/elearning/** **(function my_login_page_logo())**.
-9. If you want to add **teachers** , go to **Custom Fields/Field Group**, then **edit informations module**, then **edit Prof**, then **edit choices**.
+8. The logo which is in **wp-login.php**, you can change it from the **functions.php** file in **wp-content/themes/galaxyprogs/** **(function my_login_page_logo())**.
 # Copyrights
 You have the right to use everything for free, and you can change what you want.
 
