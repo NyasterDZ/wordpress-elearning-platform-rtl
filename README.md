@@ -66,7 +66,7 @@ In this folder you will find **1 file**:<br>
 4. If you want to change something in the **home page**, the responsible file is **front-page.php** in **wp-content/themes/galaxyprogs**.
 5. If you want to change the name of the options (Skills-Courses-Chapters-Mvideos-faqcats-faqanss), the responsible file is **gp-cpt.php** in **wp-content/mu-plugins** **(Be careful when you modify something in this file, I suggest you to read a little about Custom post in wordpress)**.
 6. If you want to change the style,logo, images, and js files you will find them in **wp-content/themes/galaxyprogs/assets**.
-7. The additional fields that appear below each creation form (in Module, Chapter, Course, Video), you will find them in **Custom Fields/Field Groups**. 
+7. The additional fields that appear below each creation form (in **Skills-Courses-Chapters-Mvideos-faqcats-faqanss**), you will find them in **Custom Fields/Field Groups**. 
 8. The logo which is in **wp-login.php**, you can change it from the **functions.php** file in **wp-content/themes/galaxyprogs/** **(function my_login_page_logo())**.
 # Copyrights
 You have the right to use everything for free, and you can change what you want.
